@@ -308,8 +308,27 @@
         .package-header {
             padding: 30px;
             text-align: center;
-            background: linear-gradient(135deg, var(--silver), var(--black));
             color: white;
+        }
+        
+        .basic-header {
+            background: linear-gradient(135deg, #6c757d, #495057);
+        }
+        
+        .silver-header {
+            background: linear-gradient(135deg, var(--silver), #8e9eab);
+        }
+        
+        .gold-header {
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+        }
+        
+        .pink-header {
+            background: linear-gradient(135deg, #ff9ec3, #ff7eb3);
+        }
+        
+        .purple-header {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
         }
         
         .package-header h3 {
@@ -348,10 +367,98 @@
             padding: 0 30px 30px;
         }
         
+        .package-note {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .package-note h4 {
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+        
+        /* Luxury Packages Section */
+        .luxury-packages {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .luxury-package-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+        
+        .luxury-package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .luxury-package-header {
+            padding: 25px 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .luxury-basic {
+            background: linear-gradient(135deg, #6c757d, #495057);
+        }
+        
+        .luxury-silver {
+            background: linear-gradient(135deg, var(--silver), #8e9eab);
+        }
+        
+        .luxury-gold {
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+        }
+        
+        .luxury-package-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .luxury-package-price {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        .luxury-package-features {
+            padding: 25px 30px;
+        }
+        
+        .luxury-package-features ul {
+            list-style: none;
+        }
+        
+        .luxury-package-features ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .luxury-package-features ul li i {
+            color: var(--gold);
+            margin-right: 12px;
+            min-width: 20px;
+        }
+        
+        .luxury-package-cta {
+            text-align: center;
+            padding: 0 30px 30px;
+        }
+        
         /* Add-ons Section */
         .addons {
             padding: 100px 0;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
         
         .addons-grid {
@@ -402,7 +509,7 @@
         /* Booking Process */
         .booking-process {
             padding: 100px 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
         }
         
         .process-steps {
@@ -731,6 +838,7 @@
                 <ul id="navMenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#packages">Packages</a></li>
+                    <li><a href="#luxury-packages">Luxury Room</a></li>
                     <li><a href="#addons">Add-Ons</a></li>
                     <li><a href="#booking">Booking</a></li>
                     <li><a href="https://wa.me/27810468068" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
@@ -765,7 +873,7 @@
                     <p>Our mission is simple: to turn any space into a celebration. We believe that balloons have the power to elevate any event, adding color, joy, and a touch of magic. From intimate gatherings to grand celebrations, we work closely with our clients to create memorable environments that leave a lasting impression.</p>
                 </div>
                 <div class="about-image">
-                    <img src="kingD.jpg" alt="Luxury Balloon Decoration">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Balloon Decoration">
                 </div>
             </div>
         </div>
@@ -783,7 +891,7 @@
                 <!-- Silver & Pink -->
                 <div class="package-card">
                     <div class="package-badge">Popular</div>
-                    <div class="package-header">
+                    <div class="package-header silver-header">
                         <h3>Silver & Pink</h3>
                         <div class="package-price">R1,650</div>
                     </div>
@@ -802,7 +910,7 @@
                 
                 <!-- Black & Silver -->
                 <div class="package-card">
-                    <div class="package-header">
+                    <div class="package-header basic-header">
                         <h3>Black & Silver</h3>
                         <div class="package-price">R1,500</div>
                     </div>
@@ -822,7 +930,7 @@
                 <!-- L-Shaped Garland -->
                 <div class="package-card">
                     <div class="package-badge">New</div>
-                    <div class="package-header">
+                    <div class="package-header gold-header">
                         <h3>L-Shaped Garland</h3>
                         <div class="package-price">R1,800</div>
                     </div>
@@ -838,6 +946,119 @@
                         <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20L-Shaped%20Garland%20Package%20(R1800)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book This Package</a>
                     </div>
                 </div>
+                
+                <!-- NEW: Be My GF Package -->
+                <div class="package-card">
+                    <div class="package-badge">Romantic</div>
+                    <div class="package-header pink-header">
+                        <h3>Be My GF</h3>
+                        <div class="package-price">R1,650</div>
+                    </div>
+                    <div class="package-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Romantic proposal setup</li>
+                            <li><i class="fas fa-check"></i> Custom "Be My GF" message</li>
+                            <li><i class="fas fa-check"></i> Elegant color scheme</li>
+                            <li><i class="fas fa-check"></i> Perfect for special moments</li>
+                        </ul>
+                    </div>
+                    <div class="package-cta">
+                        <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20Be%20My%20GF%20Package%20(R1650)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book This Package</a>
+                    </div>
+                </div>
+                
+                <!-- NEW: Balloon Garland Package -->
+                <div class="package-card">
+                    <div class="package-badge">Trending</div>
+                    <div class="package-header purple-header">
+                        <h3>Balloon Garland</h3>
+                        <div class="package-price">R1,800</div>
+                    </div>
+                    <div class="package-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Stunning balloon garland</li>
+                            <li><i class="fas fa-check"></i> Custom color combinations</li>
+                            <li><i class="fas fa-check"></i> Premium quality balloons</li>
+                            <li><i class="fas fa-check"></i> Perfect for any celebration</li>
+                        </ul>
+                    </div>
+                    <div class="package-cta">
+                        <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20Balloon%20Garland%20Package%20(R1800)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book This Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Packages Section -->
+    <section class="luxury-packages" id="luxury-packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Luxury Romantic Room Packages</h2>
+                <p>Specialized packages for creating unforgettable romantic experiences</p>
+            </div>
+            
+            <!-- Basic Package -->
+            <div class="luxury-package-card">
+                <div class="luxury-package-header luxury-basic">
+                    <h3>BASIC PACKAGE</h3>
+                    <div class="luxury-package-price">R1,050</div>
+                </div>
+                <div class="luxury-package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 20 Ceiling Balloons</li>
+                        <li><i class="fas fa-check"></i> 10 Floor Balloons</li>
+                        <li><i class="fas fa-check"></i> Happy Birthday Banner</li>
+                    </ul>
+                </div>
+                <div class="luxury-package-cta">
+                    <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20Basic%20Romantic%20Room%20Package%20(R1050)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book Basic Package</a>
+                </div>
+            </div>
+            
+            <!-- Silver Package -->
+            <div class="luxury-package-card">
+                <div class="luxury-package-header luxury-silver">
+                    <h3>SILVER PACKAGE</h3>
+                    <div class="luxury-package-price">R1,650</div>
+                </div>
+                <div class="luxury-package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 25 Ceiling Balloons</li>
+                        <li><i class="fas fa-check"></i> 2 Heart Helium Balloons OR Number Helium Balloons</li>
+                        <li><i class="fas fa-check"></i> Rose Petals on the Bed</li>
+                        <li><i class="fas fa-check"></i> Happy Birthday Banner</li>
+                    </ul>
+                </div>
+                <div class="luxury-package-cta">
+                    <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20Silver%20Romantic%20Room%20Package%20(R1650)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book Silver Package</a>
+                </div>
+            </div>
+            
+            <!-- Gold Package -->
+            <div class="luxury-package-card">
+                <div class="luxury-package-header luxury-gold">
+                    <h3>GOLD PACKAGE</h3>
+                    <div class="luxury-package-price">R2,150</div>
+                </div>
+                <div class="luxury-package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 30 Ceiling Balloons</li>
+                        <li><i class="fas fa-check"></i> 15 Floor Balloons</li>
+                        <li><i class="fas fa-check"></i> 2 Heart Helium Balloons</li>
+                        <li><i class="fas fa-check"></i> Any Number Helium Balloons</li>
+                        <li><i class="fas fa-check"></i> Happy Birthday/Anniversary Banner</li>
+                        <li><i class="fas fa-check"></i> Free Complementary Champagne</li>
+                    </ul>
+                </div>
+                <div class="luxury-package-cta">
+                    <a href="https://wa.me/27810468068?text=Hi!%20I'm%20interested%20in%20the%20Gold%20Romantic%20Room%20Package%20(R2150)" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Book Gold Package</a>
+                </div>
+            </div>
+            
+            <div class="package-note">
+                <h4><i class="fas fa-info-circle"></i> Important Information</h4>
+                <p>All prices include transportation fees. Please note that our packages do not include hotel reservations.</p>
             </div>
         </div>
     </section>
@@ -965,6 +1186,7 @@
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#packages">Packages</a></li>
+                        <li><a href="#luxury-packages">Luxury Room</a></li>
                         <li><a href="#addons">Add-Ons</a></li>
                         <li><a href="#booking">Booking Process</a></li>
                     </ul>
@@ -974,7 +1196,7 @@
                     <h3>Contact Info</h3>
                     <p><i class="fab fa-whatsapp"></i> WhatsApp: 081 046 8068</p>
                     <p><i class="fas fa-map-marker-alt"></i> Serving Pretoria & Johannesburg</p>
-                    <p><i class="fas fa-envelope"></i> info@kingdluxballoons.com</p>
+                    <p><i class="fas fa-envelope"></i> Kingdjustballons@gmail.com</p>
                 </div>
             </div>
             
@@ -1018,7 +1240,7 @@
         
         // Animate elements on scroll
         function animateOnScroll() {
-            const elements = document.querySelectorAll('.package-card, .addon-card, .step');
+            const elements = document.querySelectorAll('.package-card, .addon-card, .step, .luxury-package-card');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1032,7 +1254,7 @@
         }
         
         // Set initial state for animated elements
-        document.querySelectorAll('.package-card, .addon-card, .step').forEach(element => {
+        document.querySelectorAll('.package-card, .addon-card, .step, .luxury-package-card').forEach(element => {
             element.style.opacity = 0;
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -1045,4 +1267,3 @@
     </script>
 </body>
 </html>
-
